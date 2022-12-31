@@ -10,7 +10,7 @@ import NavLogo from '../public/assets/navLogo.png'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [navBg, setNavBg] = useState('#F5F7F7');
   const [linkColor, setLinkColor] = useState('#1f2937');
   // const [position, setPosition] = useState('fixed')
   // const router = useRouter();
@@ -50,7 +50,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
+          ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 curvedHeader'
           : 'fixed w-full h-20 z-[100]'
       }
     >
